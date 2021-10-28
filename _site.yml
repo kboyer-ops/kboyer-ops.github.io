@@ -5,9 +5,9 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "Plotly" 
+    - -text: "Plotly" 
       href: plotly.html
-    - text: "Dashboard"  
+    - -text: "Dashboard"  
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<you@youremail.com>
