@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r, include = FALSE}
 library(tidyverse)
 #install.packages("plotly")
 library(plotly)
@@ -55,4 +55,34 @@ nyc_airbnb %>%
   )
 ```
 
+## Plotly boxplot 
+
+```{r}
+nyc_airbnb %>% 
+  mutate(
+    neighbourhood = fct_reorder(neighbourhood, price)) %>% 
+  plot_ly(y = ~ price, color = ~ neighbourhood, 
+          type = "box", colors = "viridis")
+```
+
+## Plotly barchart 
+
+```{r}
+nyc_airbnb %>% 
+  count(neighbourhood) %>% 
+  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
+  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar", colors = "viridis")
+```
+
+
+## ggplotly 
+
+```{r}
+gg_lat_long <- nyc_airbnb %>% 
+  ggplot(aes(x = lat, y = long, color = price)) + 
+  geom_point()
+
+ggplotly(gg_lat_long)
+
+```
 
