@@ -1,0 +1,29 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Jeff's awesome website
+
+
+I can link to things like google 
+[google](https://www.google.com/) and [p8105](https://www.p8105.com)
+
+
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+I can make an extra page on my site and link to that. Here's my 
+[about](about.html) page. 
+
+
+## Here's Ted 
+
+My cat's name is Ted. He like sot be on the internet. Here he is: 
+
+
+
+
