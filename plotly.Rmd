@@ -1,0 +1,28 @@
+---
+title: "ploty"
+author: "Kaila Boyer"
+date: "10/28/2021"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+#install.packages("plotly")
+library(plotly)
+library(p8105.datasets)
+#install.packages("flexdashboard")
+library(flexdashboard)
+```
+
+
+```{r}
+
+```
+
