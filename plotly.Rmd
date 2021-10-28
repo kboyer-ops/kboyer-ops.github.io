@@ -6,6 +6,7 @@ output:
   html_document:
     toc: true
     toc_float: true
+    source_code: embed 
 ---
 
 ```{r setup, include=FALSE}
@@ -83,6 +84,5 @@ gg_lat_long <- nyc_airbnb %>%
   geom_point()
 
 ggplotly(gg_lat_long)
-
 ```
 
